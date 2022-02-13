@@ -20,8 +20,8 @@ Once they the readme had been set up, needed to make sure in had links in a tabl
 
 ## Screenshots
 
-![Gitbash](https://github.com/Mattdsena/WeatherDashboard/blob/main/Assets/Images/git-guardian-email.jpg)
-![Example]()
+![Gitbash](https://github.com/Mattdsena/READMEGenerator/blob/main/Images/screenshot-gitbash.jpg)
+![Example](https://github.com/Mattdsena/READMEGenerator/blob/main/Images/example.jpg)
 
 ## Summary
 
