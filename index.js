@@ -11,12 +11,12 @@ inquirer
     {
       type: "input",
       name: "description",
-      message: "Please enter a description of your project:",
+      message: "Please enter a description about your project:",
     },
     {
       type: "input",
       name: "installation",
-      message: "Please enter installation instructions:",
+      message: "Please enter the required installation instructions:",
     },
     {
       type: "input",
@@ -97,12 +97,12 @@ ${answer.contributing}
 ## Tests
 ${answer.tests}
 ## Questions
-If you have any questions, you can reach me on my [GitHub account](https://github.com/${answer.gitHubName}) or at my [email](mailto:${answer.email}).
+If you have any questions, please contact me on [GitHub account](https://github.com/${answer.gitHubName}) or at my [email](mailto:${answer.email}).
 `;
     fs.writeFile("README.md", readme, function (err) {
       if (err) {
-        return console.log("Sorry, an ERROR occurred. Please try again.");
+        return console.log("Sorry, Please try again.");
       }
-      console.log("README.md created sucessfully!");
+      console.log("README.md has been sucessfully created! Well Done!");
     });
   });
