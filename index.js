@@ -27,7 +27,7 @@ inquirer
       type: "list",
       name: "license",
       message: "Please select a license to use:",
-      choices: ["MIT", "GNU  2.0", "GNU  3.0"],
+      choices: ["GNU  2.0", "GNU  3.0", "MIT", "Apache License 2.0"],
     },
     {
       type: "input",
@@ -50,3 +50,17 @@ inquirer
       message: "Please enter your email:",
     },
   ])
+  .then(function (answer) {
+    if (answer.license === "GNU  2.0") {
+        var badge =
+          "[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
+      } else if (answer.license === "GNU  3.0") {
+        var badge =
+          "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+      } else if (answer.license === "MIT") {
+      var badge =
+        "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+    }  else if (answer.license === "Apache License 2.0") {
+      var badge =
+        "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+    }
